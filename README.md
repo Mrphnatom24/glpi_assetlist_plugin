@@ -1,12 +1,10 @@
-# GLPi Assetlist Plugin
+# GLPI Assetlist Plugin
 
 ## Introducción
 
-Este plugin implementa listas de activos mediante las cuales
-se pueden realizar actualizaciones masivas de los elementos
-que las componen. También se puede hacer comprobaciones de los
-elementos que las componen mediante el escaneo del código QR asociado
-a cada activo.
+Este complemento implementa listas de activos que se pueden utilizar para realizar actualizaciones masivas de los elementos que las componen. También pueden añadirse nuevos elementos a la lista mediante su código QR o se puede hacer un recuento de los mismos activos que componen la lista mediante el código anteriormente mencionado.
+
+This plugin implements asset lists that can be used to perform bulk updates to the elements that comprise them. New items can also be added to the list using its QR code or a count of the same assets that make up the list can be made using the aforementioned code.
 
 ## Documentación
 
@@ -14,23 +12,19 @@ a cada activo.
 
 #### Campos que no actualizan
 
-Los campos que se descartan del input usado para 
-actualizar todos los elementos de las listas son los siguientes:
-- Nombre del elemento. Son considerados un campo identificativo esencial
-  ya que de no ser asi si realizaramos una actualización de por ejemplo
+Los campos que se descartan del input usado para actualizar todos los elementos de las listas son los siguientes:
+- Campo "name". Es considerado un campo identificativo esencial
+  ya que de no ser asi si realizaramos una actualización por ejemplo de
   la lista llamada "LST-001" todos los elementos que la componen también
-  tendrían renombrados su campo de nombre.
+  tendrían actualizados el valor de su campo "name" a "LST-001".
 
 #### Mediante pestaña de actualización masiva
 
-La pestaña de actualización masiva de una lista permite ejecutar modificaciones 
-sobre todos los elementos que componen la lista, especificamente a los 
-campos que tienen todos ellos en común.
+La pestaña de actualización masiva de una lista permite ejecutar modificaciones sobre todos los elementos que componen la lista, especificamente a los campos que tienen todos ellos en común, exceptuando los anteriormente mencionados.
 
 ### Añadir un activo mediante QR
 
-En la pestaña "Elementos" encontrará un campo de texto con un botón que pone "Escanear QR" al lado.
-Luego solo tendrá que pulsar el botón "Añadir" para que se añada automaticamente el item.
+En la pestaña "Elementos" encontrará un campo de texto con un botón que pone "Escanear QR" al lado. Se abrirá un diálogo que mostrará la cámara de su dispositivo. 
 
 ### Recuento de activos de una lista
 
