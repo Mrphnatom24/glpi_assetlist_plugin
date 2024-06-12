@@ -15,28 +15,27 @@ a cada activo.
 #### Campos que no actualizan
 
 Los campos que se descartan del input usado para 
-actualizar todos los elementos de las listas son los siguinetes:
-- Nombre del elemento. Son considerados un campo identificativo esencial ya que de no ser asi si realizaramos una actualización de por ejemplo la lista llamada "LST-001" todos los lementos que la componen también tendrían renombrados su campo de nombre.
+actualizar todos los elementos de las listas son los siguientes:
+- Nombre del elemento. Son considerados un campo identificativo esencial
+  ya que de no ser asi si realizaramos una actualización de por ejemplo
+  la lista llamada "LST-001" todos los elementos que la componen también
+  tendrían renombrados su campo de nombre.
 
-#### Mediante página del formulario
+#### Mediante pestaña de actualización masiva
 
-El formulario de la lista de activos puede resultar ser lo más poderoso para realizar actualizaciones sobre varios campos porque toda actualización realizada a la lista se refleja también sobre los campos de sus elementos. Esta actualización se lleva a cabo antes de actualizar la propia lista debido a que no existe ningún gancho POST_UPDATE.
-
-#### Mediante acciones masivas
-
-Mediante el botón "Acciones" de la página de listados se puede indicar un campo para actualizar. No es tan potente como el formulario.
+La pestaña de actualización masiva de una lista permite ejecutar modificaciones 
+sobre todos los elementos que componen la lista, especificamente a los 
+campos que tienen todos ellos en común.
 
 ### Añadir un activo mediante QR
 
 En la pestaña "Elementos" encontrará un campo de texto con un botón que pone "Escanear QR" al lado.
-Una vez lo pulsé el texto del QR se insertará en un campo de texto escondido. Luego solo tendrá que pulsar el botón "Añadir" 
-para que se añada automaticamente el item.
+Luego solo tendrá que pulsar el botón "Añadir" para que se añada automaticamente el item.
 
 ### Recuento de activos de una lista
 
 En el formulario de la lista de activos encontrará, al igual que en el apartado anterior, otro botón 
-con el texto "Escanear QR" pero con una funcionalidad diferente. Después de que escanee el QR, eliminará de
-la tabla html la fila del elemento que se corresponda con el QR escaneado.
+con el texto "Escanear QR" pero con una funcionalidad diferente. Después de que escanee el QR, eliminará del listado la fila del elemento que se corresponda con el QR escaneado.
 
 ## Instalación
 
